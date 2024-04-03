@@ -1,21 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         //question 1. name = “  JOHn  .“ to “john”
-        let sir_name=" JOHn  ."
+        let sir_name = " JOHn  ."
 
-        sir_name=sir_name.toLocaleLowerCase()
-        sir_name=sir_name.trim()
-        sir_name=sir_name.replace(".","")
+        sir_name = sir_name.toLocaleLowerCase()
+        sir_name = sir_name.trim()
+        sir_name = sir_name.replace(".", "")
 
-    console.log(sir_name);
+        console.log(sir_name);
+
+        // question 2.
+        // Slice the below string to get you the resulting sentence:
+        // a.sentence_one = “The Dog Breed is German Shepherd” only display “Breed is German”
+        // b.sentence_two = “Defeats for the Clinton forces, this was her moment of triumph” only display
+        //  “Clinton forces”
+
+        let sentence_one = "The Dog Breed is German Shepherd"
+        sentence_one = sentence_one.slice(8, 23)
+        console.log(sentence_one)
+
+        let sentence_two = "Defeats for the Clinton forces, this was her moment of triumph"
+        sentence_one = sentence_two.slice(16, 30)
+        console.log(sentence_one)
+
+
+        // qustion 3.
+        // Split the below sentence using a semicolon i.e ; And display length of the result. 
+        // “The lazy dog; ran so fast; it hit the wall.” 
+
+        let sentence = "The lazy dog; ran so fast; it hit the wall"
+        sentence = sentence.split(";")
+        console.log(sentence)
+
+        console.log(sentence.length)
+
+
 
     </script>
 </body>
+
 </html>
