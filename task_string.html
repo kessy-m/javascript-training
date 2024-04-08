@@ -12,8 +12,13 @@
         //question 1. name = “  JOHn  .“ to “john”
         let sir_name = " JOHn  ."
 
+        // convert to lowercase
         sir_name = sir_name.toLocaleLowerCase()
+
+        // remove the spaces
         sir_name = sir_name.trim()
+
+        // to replace the dot
         sir_name = sir_name.replace(".", "")
 
         console.log(sir_name);
