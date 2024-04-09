@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declare an object person
+//creating an object
+        let person={"name":"kessy",
+                     "age":22,
+                     'location':'diani',
+                     'city':'mombasa',
+    }
+                    
+console.log(person)
+// console.log(person.location)-accessing values inside an object
+console.log(person['location'])
+
+// nested objects
+person.address={
+    street:'123 main st',
+    city:'paris',
+    country:'USA'
+}
+// accessing nested objects
+console.log(person.address)
+console.log(object.keys(person))
+console.log(object.values(person))
+console.log(object.entries(person))
+
+
+// add data
+person.gender='male'
+person['occupation']='tutor'
+console.log(person)
+
+// update
+person.city='mombasa'
+// pesron.address[2]
+console.log(person.address[2])
+
+// to delete
+delete person.city
+console.log(person)
+
+
+
+
+
+                    
+    </script>
+</body>
+</html>
